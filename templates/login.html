@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<a href="{{ url('database') }}">Database</a>
+<a href="{{ url('homepage') }}">Homepage</a>
+<br>
+<form>
+    <input name="email" type="text" placeholder="Email"/>
+    <br>
+    <input name="password" type="password" placeholder="Password"/>
+</form>
+{% endblock %}

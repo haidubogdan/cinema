@@ -18,5 +18,8 @@ $app['twig'] = $app->share($app->extend('twig', function ($twig, $app) {
 
     return $twig;
 }));
+$app['db'] = new \PDO('mysql:host=localhost;dbname=cinemaDatabase', 'root', 'parola'); //IA DATE DIN CONFIG
+
+
 
 return $app;
